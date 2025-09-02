@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@700&family=IBM+Plex+Sans:wght@500&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    display: none;
+}
+
+.question {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    color: #f0f0f0;
+}
+
+.ans-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ans {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    border: 2px solid #888;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.ans:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #63d90f;
+    border-color: #63d90f;
+}
+
+.start-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border: 2px solid #63d90f;
+    border-radius: 12px;
+    padding: 20px 40px;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: #63d90f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #63d90f;
+    background-color: #292929;
+}
+
+.start-btn:active {
+    transform: scale(1.1);
+    background-color: #222;
+}
+
+.container_h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #cccccc;
+}
+
+.main, .start {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}  
